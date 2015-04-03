@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<library name="standard" version="1.1">
+	<head/>
+	<elements>
+		<category description="" item_text="Console" name="console">
+			<function allow_sub_items="False" editable="False" input_widgets="[{'allowed_types': 'all', 'label': 'Text', 'argument': 'text', 'default': &quot;str 'Hello World'&quot;}]" inspector_subtitle="Print text on console" inspector_title="Print" instance_input="False" item_format_text="Print [$text]" item_icon="" item_text="Print text on console" name="print" return_input="False"/>
+			<element allow_sub_items="False" editable="False" input_widgets="[{'allowed_types': &quot;['str', 'variable', 'formula']&quot;, 'label': 'Prompt', 'argument': 'prompt', 'default': &quot;str ''&quot;}]" inspector_subtitle="Get input from console" inspector_title="Input" instance_input="False" item_format_text="Get input [$prompt]" item_icon="" item_text="Read input from console" name="input" return_input="True"/>
+		</category>
+		<category description="" item_text="App" name="app">
+			<function allow_sub_items="False" editable="False" input_widgets="[{'allowed_types': &quot;['str', 'int', 'variable', 'formula']&quot;, 'label': 'Status', 'argument': 'status', 'default': 'int 0'}]" inspector_subtitle="Exit the application" inspector_title="Exit" instance_input="False" item_format_text="Exit with status [$status]" item_icon="" item_text="Exit the application" name="exit" return_input="False"/>
+		</category>
+		<category description="" item_text="Control" name="control">
+			<element allow_sub_items="True" editable="False" input_widgets="[{'allowed_types': 'all', 'label': 'Expression', 'argument': 'expression', 'default': 'bool True'}]" inspector_subtitle="If an expression is true" inspector_title="If" instance_input="False" item_format_text="If [$expression]" item_icon="" item_text="If an expression is true" name="if" return_input="False"/>
+		</category>
+	</elements>
+</library>
